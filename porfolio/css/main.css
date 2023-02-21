@@ -1,0 +1,136 @@
+#socials{
+    
+    display: flex !important; 
+    justify-content: space-between !important; 
+    flex-direction: row !important;
+
+}
+@media (max-width:700px) {
+    .mb-1{
+        width: 100% !important;
+        justify-content: center;
+  }
+  #socials{
+    margin-left:15px !important;
+    display: flex !important; 
+    justify-content: space-between !important; 
+    flex-direction: row !important;
+  }
+}
+@media (min-width:992px) {
+    #avatar{
+        width: 180px !important;
+        height: 200px !important;
+    }
+    #hobby{
+      width:50% !important;
+      
+      justify-content: center;
+      
+      align-items:center;
+    }
+    #skills a{
+  margin-right: 1.25rem !important;
+}
+#socials{
+  width:50% !important;
+  margin-left: 14rem !important;
+  justify-content: center;
+  
+  align-items:center;
+}
+}
+#hobby{
+  width:90% !important;
+  
+  justify-content: center;
+  
+  align-items:center;
+}
+#hobby a{
+  text-decoration: none;
+}
+#socials{
+  width:70% ;
+  margin-left: 4rem;
+  justify-content: center;
+  
+  align-items:center;
+}
+.col-xl-3{
+    width:100% !important;
+    transition: 0.5s;
+}
+#skills a:hover{
+   text-decoration: none;
+   color:white;
+   
+}
+
+#hobby u a{
+   margin: 1rem !important;
+}
+
+#socials li a:hover{
+    flex:1;
+    color:rgb(218, 120, 96);
+    transition: 0.5s;
+    font-size: 20px;
+
+}
+.portfolio-thumb{
+    margin: 5px !important;
+    border-radius: 10px !important;
+}
+.iso-box{
+    width:180px !important;
+    
+}
+.iso-box-section{
+    padding-left: 8px !important;
+}
+.portfolio-overlay small{
+    font-size: 8px !important;
+}
+.portfolio-overlay{
+     
+      flex: 1 !important;
+        text-align: center !important;
+      width:100% !important;
+     font-size: 8px !important;
+      padding: 0px 5px 0px 5px !important;
+     
+}
+.align-middle{
+    font-size: 15px;
+}
+.sidebar-cta-content{
+    font-size: 10px;
+}
+
+#about .about-img {
+    background: url('../images/about.jpg') no-repeat;
+}
+
+#about .about-thumb,
+#about .skill-thumb {
+  padding: 22px 32px 32px 32px;
+}
+
+#about .progress {
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: none;
+  height: 2px;
+}
+
+#about .progress-bar-primary {
+  background: #232B2B;
+}
+
+#about strong,
+#about span {
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 8px;
+}
