@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Portifolio &amp; Dashboard">
+	<meta name="author" content="Gion">
+	<meta name="keywords" content="Gion, bootstrap 5, admin, dashboard,, responsive, css,html, theme, front-end,Back-End web">
+
+	<link rel="preconnect" href="../external.html?link=https://fonts.gstatic.com/">
+	<link rel="shortcut icon" href="img/icons/logo2.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mainstyle.css">
+	
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="canonical" href="index.html" />
+
+	<title>Home | Gion Portfolio</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/stm.css">
+	<link href="../external.html?link=https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper" style="margin-right: 0px !important;">
+		<nav id="sidebar"  style="margin-right: 0px !important;" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				
+          <span class="align-middle" style="text-shadow: 0px 1px 1px blue; text-align: left; margin-left: 15px; width: 100%; font-size: 25px !important; color: white !important;">Gion</span>
+         </a>
+
+				<ul class="sidebar-nav">
+					
+
+					<li class="sidebar-item active" onclick="closeSidebar(this)" style="padding: 5px !important; margin-top:15px !important">
+						<a class="sidebar-link" href="#home">
+              <i class="align-middle" data-feather="home"></i> <span  class="align-middle">Home</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item  " onclick="closeSidebar(this)" style="padding: 5px !important;">
+						<a class="sidebar-link" href="#about">
+              <i class="align-middle" data-feather="info"></i> <span class="align-middle" >About Me</span>
+            </a>
+					</li>
+					<li class="sidebar-item " onclick="closeSidebar(this)"  style="padding: 5px !important;">
+						<a class="sidebar-link" href="profile.html">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li>
+					<li class="sidebar-item" onclick="closeSidebar(this)"  style="padding: 5px !important; transition:0.6s">
+						<a class="sidebar-link" href="#about">
+              <i class="align-middle" data-feather="award"></i> <span class="align-middle">Expirences</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item "onclick="closeSidebar(this)"  style="padding: 5px !important;">
+						<a class="sidebar-link" href="#portfolio">
+              <i class="align-middle" data-feather="activity"></i> <span class="align-middle">Projects</span>
+            </a>
+					</li>
+          <li class="sidebar-item "onclick="closeSidebar(this)"  style="padding: 5px !important;">
+						<a class="sidebar-link" href="#testimonials">
+              <i class="align-middle" data-feather="check"></i> <span class="align-middle">Testimonials</span>
+            </a>
+					</li>
+          <li class="sidebar-item "onclick="closeSidebar(this)"  style="padding: 5px !important;">
+						<a class="sidebar-link" href="#facts">
+              <i class="align-middle" data-feather="cast"></i> <span class="align-middle">Facts</span>
+            </a>
+					</li>
+					
+
+					<li class="sidebar-item" onclick="closeSidebar(this)"  style="padding: 5px !important;">
+						<a class="sidebar-link" href="#contact">
+              <i class="align-middle" data-feather="inbox"></i> <span class="align-middle">Contact</span>
+            </a>
+					</li>
+					
+					
+
+				<div class="sidebar-cta" style="padding: 10px !important; font-size: 12px !important;">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2" style="font-size: 12px;">Hi There!</strong>
+						<div class="mb-3 text-sm"style="font-size: 12px;">
+							Are you looking forward to having a fully responsive web application with neat and secure (web server)? 
+						</div>
+						<div class="d-grid">
+							<a href="upgrade-to-pro.html" class="btn btn-primary" style="font-size: 12px;">Hire Me!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav onclick="openSidebar()" class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle" >
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span style="font-size: 8px !important;" class="indicator">3</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									3 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="upload-cloud"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark"> Portfolio Website </div>
+												<div class="text-muted small mt-1">deployed</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+									
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Website Updates</div>
+												<div class="text-muted small mt-1">Coming soon</div>
+												<div class="text-muted small mt-1">check back in couple of weeks</div>
+											</div>
+										</div>
+									</a>
+									
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="heart"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Hi There!</div>
+												<div class="text-muted small mt-1">Welcome, I await your feedback. Thank you!  </div>
+											</div>
+										</div>
+									</a>
+								</div>
+								
+							</div>
+						</li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="John Sunday" /> <span class="text-dark">John Sunday</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="profile.html"style="font-size: 12px;"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#" onclick="ModalOpen()" style="font-size: 12px;"><i class="align-middle me-1" data-feather="settings"></i>Theme</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<section id="home" class="templatemo-home" >
+				<div class='profile-container'>
+					<div class='profile-parent'>
+						
+						<div class='profile-details'>
+							<div class='colz'>
+
+								<div class='colz-icon' style="padding-top: 10px !important;">
+		
+									<ul class="list-unstyled mb-1" id="sociall" style="padding: 2px; border-radius: 4px; display:flex !important; justify-content:center">
+										<li class="mb-1"><a href="https://www.facebook.com/profile.php?id=100004854737045"><span data-feather="facebook"class="feather-sm me-1"></span></a></li>
+										<li class="mb-1"><a href="#"><span data-feather="twitter"class="feather-sm me-1"></span></a></li>
+										<li class="mb-1"><a href="https://www.linkedin.com/in/john-sunday-3563a0219"><span data-feather="linkedin"class="feather-sm me-1"></span></a></li>
+										<li class="mb-1"><a href="#"><span data-feather="instagram"class="feather-sm me-1"></span></a></li>
+									</u>
+								</div>
+								</div>
+								<div class='profile-details-name'>
+									<span class='primary-textt' style="font-size: 18px !important;">
+                   
+										Hello, I'm <span class="highlighted-text" style="font-size: 18px !important;">GION</span>
+									</span>
+									
+								</div>  
+								<div class='profile-details-role' style="font-size: 26px !important;">
+									<span class="primary-text">
+                    <h1 style="color:oldlace !important; font-size: 26px !important;"> 
+                      <span  style="color:oldlace !important; font-size: 26px !important;" class="typed" data-typed-items="Graphics Designer, M.E.R.N Fullstack Web Developer, Freelancer, Web Designer"></span></h1>
+      
+									
+									<span class='profile-details-role-tagline' style="color: orangered;">
+									   <strong>Hi There! </strong>  Welcome <strong style="color: white !important;"> to my</strong>  Website...
+									</span>
+									</span>
+									<div class="profile-options">
+										<a href="#contact">
+											<button class="actionbtn hire">Hire Me</button>
+
+										</a>
+										<a href="#portfolio" >
+											<button class="actionbtn works">See Works</button>
+										</a>
+			</div>                 </div>
+							 </div>
+								<div class="profile-picture" id="profile-pics">
+									<div class="profile-picture-background" id="profile-pics">
+		
+									</div>
+								</div>
+						</div>
+				   
+				</div>
+			</section>
+			 
+			<!-- About Section -->
+
+			<section id="about" class="parallax-section">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6" style="margin-top: 4px !important;">
+							<div class="about-thumb">
+									<div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+										
+										<h1 style="padding: 0px 2px 20px 0px; font-weight: 600 !important; text-align: left !important ;  font-size:25px !important;">Hello! <br/>I'm John Sunday</h1>
+										<p id="profe" style="text-shadow: 0px 0px 1px rgb(255, 255, 255) !important; text-align: left !important ;">I am an innovative, task-driven professional <strong > Front-End Developer</strong> and <strong >Back-End Developer</strong> creating modern and responsive designs for 
+											<strong  >Websites</strong> and <strong >fully functional Server-Side Web applications</strong>. Proficient in developing databases, creating user interface, writing and testing codes, troubleshooting simple/complex issues, and implementing new features base on user feedbacks. 
+											<br /> Looking forward to working with you. <br/><strong >Thank you!</strong> </p>
+										</div>
+										
+							</div>
+						</div>
+
+				
+
+						<div class="bg-yellow col-md-3 col-sm-6">
+							<div class="skill-thumb">
+									<div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
+										<h1 style="padding: 0px 2px 10px 0px; font-weight: 600 !important; text-align: left !important ;  font-size:25px !important;">Skills</h1>
+										<p class="color-white" style="text-shadow: 0px 0px 1px rgb(255, 255, 255) !important; text-align: left !important ;">Web Development . HTML CSS JS. Node React Express. Graphics Design</p>
+									</div>
+									<div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+									<strong>Frontend Design</strong>
+										<span class="color-white pull-right">90%</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+											</div>
+													
+									<li class="nav-item dropdown" style="width: 100% !important;">
+									<label class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown" > Proficiencies
+									<i class="align-middle" data-feather="chevron-down"></i>
+									</label>
+
+									<label style="cursor:pointer  !important" class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown" style="width: 100% !important;">
+									<span class="text-dark" style="cursor:pointer !important">Proficiencies</span></i>
+									</label>
+									<div class="dropdown-menu dropdown-menu-end" style="width: 100% !important; padding:5px 10px 5px 10px">
+										<h4 class="tm-progress-label">JavaScript (Vanilla) <small class="progress-percent-small">80%</small></h4>
+											<div class="progress tm-progress">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+											</div>
+											<h4 class="tm-progress-label">HTML5 <small class="progress-percent-small">90%</small></h4>
+											<div class="progress tm-progress">
+												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+											</div>
+											<h4 class="tm-progress-label">CSS5 <small class="progress-percent-small">80%</small></h4>
+											<div class="progress tm-progress">
+											<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+											<h4 class="tm-progress-label">Bootstrap <small class="progress-percent-small">80%</small></h4>
+											<div class="progress tm-progress">
+											<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+												
+										</div>
+								</li>
+									<strong>Backend processing</strong>
+										<span class="color-white pull-right">80%</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+											</div>
+											<li class="nav-item dropdown" style="width: 100% !important; border-radius: 10px !important;">
+												<label class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown" > Proficiencies
+												<i class="align-middle" data-feather="chevron-down"></i>
+												</label>
+			
+												<label style="cursor:pointer !important" class="nav-link dropdown-toggle d-none d-sm-inline-block" style="border-radius: 10px !important;" href="#" data-bs-toggle="dropdown" style="width: 100% !important;">
+												<span class="text-dark" style="cursor:pointer !important">Proficiencies</span></i>
+												</label>
+												<div class="dropdown-menu dropdown-menu-end" style="width: 100% !important;padding:5px 10px 5px 10px">
+													<h4 class="tm-progress-label">Node JS <small class="progress-percent-small">80%</small></h4>
+														<div class="progress tm-progress">
+															<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+														</div>
+														<h4 class="tm-progress-label">Express JS<small class="progress-percent-small">90%</small></h4>
+														<div class="progress tm-progress">
+															<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+														</div>
+														<h4 class="tm-progress-label">MongoDB (Mongoose)  <small class="progress-percent-small">80%</small></h4>
+														<div class="progress tm-progress">
+														<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+														</div>
+											</li>
+									   <strong>Graphics</strong>
+										<span class="color-white pull-right">80%</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+											</div>
+											<li class="nav-item dropdown" style="width: 100% !important;">
+												<label class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown" > Proficiencies
+												<i class="align-middle" data-feather="chevron-down"></i>
+												</label>
+			
+												<label style="cursor:pointer !important" class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown" style="width: 100% !important;">
+												<span class="text-dark" style="cursor:pointer !important; margin-left:10px !important;">Proficiencies</span></i>
+												</label>
+												<div class="dropdown-menu dropdown-menu-end" style="width: 100% !important; padding:5px 10px 5px 10px">
+													<h4 class="tm-progress-label"> Adobe Photoshop<small class="progress-percent-small">80%</small></h4>
+														<div class="progress tm-progress">
+															<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+														</div>
+														<h4 class="tm-progress-label">Corel Draw<small class="progress-percent-small">90%</small></h4>
+														<div class="progress tm-progress">
+															<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+														</div>
+														<h4 class="tm-progress-label">Pixel Lab (Mobile) <small class="progress-percent-small">80%</small></h4>
+														<div class="progress tm-progress">
+														<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+														</div>
+											</li>
+									</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+            <!-- START CONTACT -->
+	<section id="portfolio" class="tm-portfolio" style="background-color: #1f2235; border-radius: 10px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wow bounce">
+					<div class="title">
+						<h2 class="tm-portfolio-title" style="color: white;"> Some of My <strong style="color: white;">Works</strong></h2>
+
+					</div>
+					<!-- START ISO SECTION -->
+					<div class="iso-section">
+						
+						<div class="iso-box-section">
+							<div class="iso-box-wrapper col4-iso-box">
+								<div class="iso-box html photoshop wordpress mobile col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb" >
+										<img src="./img/projects/portfolioMain.png" width="600px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay" >
+											<h3 class="portfolio-item-title" >Portfolio Website</h3>
+											<a href="index.html"><button class="btn btn-primary p-3"> Check it out</button></a> 
+										</div>
+									</div>
+								</div>
+							
+								<div class="iso-box photoshop col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/nft.jpg" width="600px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Phoenix NFT Market <small style="color: blue;">Under construction</small></h3>
+											
+											<a href="./projects/nft-web/index.html"><button class="btn btn-primary p-3"> Check it out</button></a> </div>
+									</div>
+								</div>
+								<div class="iso-box vjs col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/muchency.jpg" width="500px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">PhotoStudio Website</h3>
+											<a href="./projects/muchency/index.html"><button class="btn btn-primary p-3"> Check it out</button></a> 
+										</div>
+									</div>
+								</div>
+								<div class="iso-box vjs col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/baggymessiah.png" width="400px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Music Website <small style="color:royalblue">made with Wixsite</small></h3>
+											<a href="https://richardadaji.wixsite.com/mysite"><button class="btn btn-primary p-3"> Check it out</button></a> 
+											
+										</div>
+									</div>
+								</div>
+								<div class="iso-box vjs col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/mysite.jpg" width="500px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">My Website</h3>
+											<a href="./projects/mysite/index.html"><button class="btn btn-primary p-3"> Check it out</button></a> 
+										</div>
+									</div>
+								</div>
+								<div class="iso-box vjs col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/todolist.jpg" width="400px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Simple Todo List</h3>
+											<a href="./projects/todolist/index.html"><button class="btn btn-primary p-3"> Check it out</button></a> 
+											
+										</div>
+									</div>
+								</div>
+								<div class="iso-box vjs col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/form.jpg" width="500px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Form Validation</h3>
+											<a href="./projects/mysite/index2.html"><button class="btn btn-primary p-3"> Check it out</button></a> 
+										</div>
+									</div>
+								</div>
+								<div class="iso-box vjs col-md-33 col-sm-3 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="./img/projects/university.png" width="500px !important" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">University Homepage <small>Under contruction</small></h3>
+											<a href="./projects/university/index.html"><button class="btn btn-primary p-3"> Check it out</button></a> 
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<section id="testimonials" class="tm-portfolio testimonials section-bg">
+			<div class="container">
+			<div class="row">
+		  <div class="container-test" data-aos="fade-up">
+	
+			<div class="section-title">
+				<h2>Testimonials</h2>
+			  </div>
+	  
+			<div class="testimonials-slider swiper"  data-aos="fade-up" data-aos-delay="100">
+			  <div class="swiper-wrapper">
+	
+				<div class="swiper-slide">
+				  <div class="testimonial-item">
+					<img src="img/photos/baggy.jpg" class="testimonial-img" alt="">
+					<h3>Eze Virgilus</h3>
+					<h4>Seminarian &amp; Musician</h4>
+					<p>
+					  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            Your dedication to works is really inspiring. Good job!<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+				  </div>
+				</div><!-- End testimonial item -->
+	
+				<div class="swiper-slide">
+				  <div class="testimonial-item">
+					<img src="img/photos/darby.jpg"  class="testimonial-img" alt="">
+					<h3>Darby Sampson</h3>
+					<h4>Pharmacist</h4>
+					<p>
+					  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+					 This is way beyond my espectations. I love it. Thank you!
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+				  </div>
+				</div><!-- End testimonial item -->
+	
+				<div class="swiper-slide">
+				  <div class="testimonial-item">
+					<img src="img/photos/bube.jpg" class="testimonial-img" alt="">
+					<h3>Lawrencia Ebube</h3>
+					<h4>Front-End Developer &amp; Freelancer</h4>
+					<p>
+					  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            The way you handled the project showed resilience, experience, knowledge, and critical thinking.
+             We would love to get your perspective on our next project.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+				  </div>
+				</div><!-- End testimonial item -->
+	
+				<div class="swiper-slide">
+				  <div class="testimonial-item">
+					<img src="img/photos/dj.jpg" class="testimonial-img" alt="">
+					<h3>Chibuike Okodo</h3>
+          <h4>Photographer &amp; DJ</h4>
+					<p>
+					  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+					  I believe your work will bring joy to many people in the future. May your creativity shine bright in the days to come.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+				  </div>
+				</div><!-- End testimonial item -->
+	
+				<div class="swiper-slide">
+				  <div class="testimonial-item">
+					<img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+					<h3>Larson Frida</h3>
+					<h4>Freelancer</h4>
+					<p>
+					  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+           	 You are a pleasure to work with. Great job!<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+				</p>
+				  </div>
+				</div><!-- End testimonial item -->
+	
+			  </div>
+			  <div class="swiper-pagination"></div>
+			</div>
+	
+		  </div>
+		</div>
+	</div>
+		</section><!-- End Testimonials Section -->
+		<div class="container">
+			<div class="row">
+		<section id="facts"  style="padding:10rem 2rem 0rem 2rem !important" class="facts">
+			<div class="container" data-aos="fade-up">
+	  
+			  <div class="section-title">
+				<h2>Facts</h2>
+				<p></p>
+
+        </div>
+	  
+			  <div class="row">
+	  
+				<div class="col-lg-3 col-md-6">
+				  <div class="count-box">
+					<i class="bi bi-emoji-smile"></i>
+					<span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+					<p>Happy Clients</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+				  <div class="count-box">
+					<i class="bi bi-journal-richtext"></i>
+					<span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
+					<p>Projects</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+				  <div class="count-box">
+					<i class="bi bi-headset"></i>
+					<span data-purecounter-start="0" data-purecounter-end="563" data-purecounter-duration="1" class="purecounter"></span>
+					<p>Hours Of Support</p>
+				  </div>
+				</div>
+	  
+				
+	  
+			  </div>
+	  
+			</div>
+    </div>
+  </div>
+		  </section><!-- End Facts Section -->
+	<section id="contact" class="tm-contact" style="border-radius: 10px; font-size: 18px !important; background-color: #1f2235;   width: 100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">					
+					<h2 class="title" style="color: rgb(241, 115, 69); font-size:25px !important">Contact <strong style="color: rgb(255, 255, 255);">me</strong></h2>
+					<hr>					
+				</div>
+				<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-10 col-sm-10">
+					<form id="contact">
+						<div class="col-md-6 col-sm-6">
+							<input class="form-control" name="name" id="name" required type="text" placeholder="Your Name">
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<input class="form-control" name="email" id="email" type="email" placeholder="Your Email">
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<input class="form-control" name="subject" id="subject"  type="text" placeholder="Your Subject">
+							<textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="6"></textarea>
+						</div>
+						<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+							<button type="submit" class="form-control" type="submit" id="form-submit" value=""> SEND MESSAGE</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- END CONTACT -->
+
+			
+				<footer id="footer" class="footer">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col-6 text-start">
+								<p class="mb-0">
+									&copy;<a class="text-muted" href="" target="_blank"><strong>Gion</strong></a>
+								</p>
+							</div>
+							<div class="col-6 text-end">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<a class="text-muted" href="index.html" target="_blank">Home</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#contact" target="_blank">Contact</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#portfolio" target="_blank">Projects</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+		</div>
+	</div>
+	<style>
+		*{
+			font-size: 12px;
+		}
+	</style>
+	<script>
+		const ModalOpen = () =>{
+			
+			alert('Oops!... Temporarily Unavailable')
+		}
+    function profilePic(){
+    const profile = document.getElementById('profile-pics')
+    profile.style.marginRight = '0px';
+    profile.style.transition = '0.6s'
+    }
+	</script>
+	<script src="js/app.js"></script>
+	<script src="js/sidebar.js"></script>
+	<script src="assets/js/contact.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<!--<script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  -->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+>
