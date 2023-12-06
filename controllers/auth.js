@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer')
 
 const newMessage = async (req, res) => {
     const {name, email, subject, message} =  req.body
+ //   console.log(email, message)
      
         var transporter = nodemailer.createTransport({
             service :'gmail',
@@ -61,7 +62,7 @@ const newMessage = async (req, res) => {
             if(error){
                 return res.json({error: error})
             }
-            res.json({message: "Thank you" })
+            res.json({message: "Message Sent. Thank you!" })
         })
     
 }

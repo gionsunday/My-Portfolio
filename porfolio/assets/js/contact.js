@@ -6,9 +6,11 @@ window.addEventListener('load', () =>{
     const sendBtn  = document.querySelector('#form-submit');
    const form = document.querySelector('#contact')
 
-   form.addEventListener('submit', async (e) =>{
-       e.preventDefault()
- 
+  //  form.addEventListener('submit', async (e) =>{
+      
+   sendBtn.addEventListener("click", async (e) =>{
+    e.preventDefault()
+  
       const name = nameIn.value;
       const email = emailIn.value;
       const subject = subjectIn.value;
@@ -24,18 +26,18 @@ window.addEventListener('load', () =>{
         subjectIn.value = ""
         messageIn.value =""
         try {
-            await axios.post('/api/v01/sendmessage', {
+          const data =  await axios.post('/api/v01/sendmessage', {
                 name:name, email:email, subject:subject, message:message
-            }).then(()=>{
-              
+            })
+            
             sendBtn.textContent = "Message Sent. Thank You!"
             sendBtn.classList.add('success')
-            })
-            setTimeout(()=>{
+          
+            
               sendBtn.classList.remove('success')
               sendBtn.textContent = "Send Message"
             
-            },3000)
+            
         } catch (error) {
             console.log(error)
         }
