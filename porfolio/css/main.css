@@ -81,6 +81,7 @@
 .portfolio-thumb{
     margin: 5px !important;
     border-radius: 10px !important;
+    border: 1px solid wheat;
 }
 .iso-box{
     width:180px !important;

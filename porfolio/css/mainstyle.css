@@ -481,6 +481,13 @@ input { height: 50px; }
     display: flex;
     flex-direction: column-reverse;
   }
+  .portfolio-thumb img{
+    margin: 10px !important;
+    border-radius: 16px !important;
+    padding: 10px !important;
+    border: 1px solid blueviolet;
+    width: 100% !important;
+  }
   .profile-options{
     display: flex;
     flex-direction: column;
@@ -693,7 +700,11 @@ input { height: 50px; }
   margin: 5px !important;
   border-radius: 16px !important;
   padding: 10px !important;
+  border: 1px solid blueviolet;
+  width: 90%;
+
 }
+
 
 /*MODAL THEME*/
 
