@@ -509,10 +509,11 @@ input { height: 50px; }
     width:64%;
   }
   .templatemo-home{
-    height: 100vh !important;
+    height: 75vh !important;
     width: 100% !important;
     border-radius: 15px;
     margin: 0px 0px 0px 0px !important;
+   
   }
   
 }
